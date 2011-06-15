@@ -12,10 +12,9 @@ jQuery(document).ready(function($) {
             avatar_size: 64,
             loading_text: "loading tweets..."
         });
-
-        setInterval(function() {
-            $("time.tweet_time.seconds").trigger("updatetime");
-        }, 1000);
     }).trigger("submit");
     
+    setInterval(function() {
+        $("time.tweet_time.seconds").trigger("updatetime");
+    }, 1000);
 });
