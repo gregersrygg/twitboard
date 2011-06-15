@@ -5,9 +5,11 @@ jQuery(document).ready(function($) {
         
         var serachQuery = $("input[name=search-term]").val();
         $("#stream").empty().tweet({
+            count: 10, /* number for search results */
+            refresh_interval: 30, /* update every 30 seconds */
+            
             query: serachQuery,
             avatar_size: 64,
-            count: 10,
             loading_text: "loading tweets..."
         });
 
