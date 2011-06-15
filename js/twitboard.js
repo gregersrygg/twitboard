@@ -3,8 +3,8 @@ jQuery(document).ready(function($) {
     $("header form").submit(function(e) {
         e.preventDefault();
         
-        var serachQuery = $("#search-term").text();
-        $("#stream").tweet({
+        var serachQuery = $("input[name=search-term]").val();
+        $("#stream").empty().tweet({
             query: serachQuery,
             avatar_size: 64,
             count: 10,
@@ -14,5 +14,6 @@ jQuery(document).ready(function($) {
         setInterval(function() {
             $("time.tweet_time.seconds").trigger("updatetime");
         }, 1000);
-    });
+    }).trigger("submit");
+    
 });

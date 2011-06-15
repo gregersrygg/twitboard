@@ -1,34 +1,22 @@
-html {
-    height: 100%;
-}
 body {
-    display: box;
-    display: -webkit-box;
-    box-orient: vertical;
-    -webkit-box-orient: vertical;
-    height: 100%;
+    overflow: hidden;
 }
+
 header {
     text-align: center;
 }
 
-#search-term {
+header input[type=submit] {
+  display: none;
+}
+
+header:hover input[type=submit] {
+  display: inline-block;
+}
+
+input[name=search-term] {
     font-size: 2em;
     font-weight: bold;
     padding: 25px;
-}
-
-#stream {
-    box-flex: 1;
-    -webkit-box-flex: 1;
-    position:relative;
-    display: box;
-    display: -webkit-box;
-    box-orient: vertical;
-    -webkit-box-orient: vertical;
-}
-
-.tweet .tweet_list {
-    box-flex: 1;
-    -webkit-box-flex: 1;
+    border: 0px;
 }
