@@ -4,19 +4,31 @@ body {
 
 header {
     text-align: center;
+	height:8px;
+	overflow:hidden;
 }
+.showheader header{height:auto}
 
 header input[type=submit] {
   display: none;
 }
 
-header:hover input[type=submit] {
-  display: inline-block;
+header:hover{
+  height:auto;
 }
 
 input[name=search-term] {
-    font-size: 2em;
+    font-size: 4em;
     font-weight: bold;
-    padding: 25px;
+    padding: 8px 20px;
     border: 0px;
+	font-family: Helvetica,arial, sans-serif;
+	background:transparent;
+	width:550px;
 }
+
+body.vertical{}
+.vertical header:hover{height:auto}
+.vertical #stream{margin-left:100px;}
+.vertical header{-webkit-transform:rotate(90deg); -moz-transform: rotate(90deg);position:absolute;position: absolute;top: 254px;left: -249px;height: 100px;width: 600px;}
+.vertical .twitterlishous{background:transparent url(../logo_twitter_square.png) bottom left no-repeat;height:80px;width:80px;position:absolute;bottom:10px;left:10px;}

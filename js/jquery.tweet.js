@@ -207,7 +207,7 @@
                           ('<a class="tweet_avatar" href="'+user_url+'"><img src="'+avatar_url+
                            '" height="'+avatar_size+'" width="'+avatar_size+
                            '" alt="'+screen_name+'\'s avatar" title="'+screen_name+'\'s avatar" border="0"/></a>') : '');
-            var time = '<time class="tweet_time '+tweet_time_unit+'" datetime="'+new Date(tweet_time).toJSON()+'"><a href="'+tweet_url+'" title="view tweet on twitter">'+tweet_relative_time+' (' +item.created_at+ ')</a></time>';
+            var time = '<time class="tweet_time '+tweet_time_unit+'" datetime="'+new Date(tweet_time).toJSON()+'"><a href="'+tweet_url+'" title="view tweet on twitter">'+tweet_relative_time+'</a></time>';
             var text = '<span class="tweet_text">'+$([tweet_text]).makeHeart().capAwesome().capEpic()[0]+ '</span>';
             var reply_url = "http://"+s.twitter_url+"/intent/tweet?in_reply_to="+item.id_str;
             var retweet_url = "http://"+s.twitter_url+"/intent/retweet?tweet_id="+item.id_str;
