@@ -12,6 +12,10 @@ jQuery(document).ready(function($) {
         clearTimeout(refreshTimer);
         
         var serachQuery = $("input[name=search-term]").val();
+        if(location.hash != "#"+serachQuery) {
+          location.hash = serachQuery;
+        }
+        
         $("#stream").empty().tweet({
             count: maxResults,
             template: "{avatar}{time}<span class='tweet_screen_name'>{screen_name}</span>{text}",
