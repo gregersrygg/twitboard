@@ -1,5 +1,9 @@
 jQuery(document).ready(function($) {
     
+    if(location.hash) {
+      $("input[name=search-term]").val(location.hash.replace(/^#/, ""));
+    }
+    
     $("header form").submit(function(e) {
         e.preventDefault();
         
