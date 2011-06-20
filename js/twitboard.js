@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    var refreshTimeInSec = 30;
+    var refreshTimeInSec = 5 * 60;
     var maxResults = 10;
     var refreshTimer;
     
